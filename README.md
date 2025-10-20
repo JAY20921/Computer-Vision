@@ -129,6 +129,4 @@ Replace `<script_name>` with the Python file of the project you want to run.
 
 ---
 
-## License
 
-This project is licensed under the MIT License.
