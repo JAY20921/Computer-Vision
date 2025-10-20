@@ -1,6 +1,6 @@
 # Computer Vision Projects
 
-Welcome to my collection of computer vision projects! This repository contains multiple projects using OpenCV, YOLO, and other Python libraries for image and video processing.
+Welcome to my collection of computer vision projects! This repository contains multiple projects using Python and OpenCV, showcasing real-time color detection, face recognition, human detection, object detection, robotic arm control, ARUCO marker detection, camera calibration, GUI automation, and server communication.
 
 ---
 
@@ -8,93 +8,111 @@ Welcome to my collection of computer vision projects! This repository contains m
 
 ### 1. Colours Detection
 
-* **Description**: Detects and identifies colors in images or video streams.
-* **How to Run**:
+**Description**: Detects and identifies colors of objects in real-time using a webcam feed. Utilizes HSV color space for better segmentation.
+
+**How to Run**:
 
 ```bash
 python "Colours Detection.py"
 ```
 
+**Dependencies**: opencv-python, numpy
+
 ### 2. Face Recognition
 
-* **Description**: Detects and recognizes faces using pre-trained models.
-* **How to Run**:
+**Description**: Detects and recognizes faces using OpenCV's Haar Cascade and LBPH.
+
+**How to Run**:
 
 ```bash
 python "Face_recognition.py"
 ```
 
+**Dependencies**: opencv-python
+
 ### 3. Human Detector
 
-* **Description**: Detects humans in images or video using YOLO.
-* **How to Run**:
+**Description**: Detects humans in real-time using pre-trained MobileNet SSD.
+
+**How to Run**:
 
 ```bash
 python "Human Detector.py"
 ```
 
+**Dependencies**: opencv-python
+
 ### 4. Object Detection
 
-* **Description**: Detects objects using YOLO or MobileNetSSD.
-* **How to Run**:
+**Description**: Performs object detection using a pre-trained MobileNet SSD model.
+
+**How to Run**:
 
 ```bash
 python "OBJECT_DETECTION.py"
 ```
 
-### 5. ROBOTIC ARM
+**Dependencies**: opencv-python
 
-* **Description**: Controls a robotic arm based on object tracking.
-* **How to Run**:
+### 5. PYAutoGUI Automation
 
-```bash
-python "ROBOTIC_ARM.py"
-```
+**Description**: Automates GUI interactions such as mouse and keyboard actions.
 
-### 6. ARUCO Marker Detection
-
-* **Description**: Detects ARUCO markers and calculates their pose.
-* **How to Run**:
-
-```bash
-python "aruco.py"
-```
-
-### 7. Camera Calibration
-
-* **Description**: Calibrates camera and removes lens distortion.
-* **How to Run**:
-
-```bash
-python "calibration.py"
-```
-
-### 8. MobileNetSSD Model Files
-
-* **Description**: Contains pre-trained MobileNetSSD model files for object detection.
-* **How to Use**: Used automatically by `OBJECT_DETECTION.py`.
-
-### 9. Server
-
-* **Description**: Hosts computer vision models as APIs.
-* **How to Run**:
-
-```bash
-python "Server.py"
-```
-
-### 10. PYAutoGUI Automation
-
-* **Description**: Automates GUI tasks using Python.
-* **How to Run**:
+**How to Run**:
 
 ```bash
 python "PYAutoGUI.py"
 ```
 
-### 11. Calibration Data (data.yaml)
+**Dependencies**: pyautogui
 
-* **Description**: Contains camera calibration data for use in calibration scripts.
+### 6. ROBOTIC ARM Control
+
+**Description**: Controls a robotic arm using visual feedback and inverse kinematics.
+
+**How to Run**:
+
+```bash
+python "ROBOTIC_ARM.py"
+```
+
+**Dependencies**: opencv-python, numpy
+
+### 7. ARUCO Marker Detection
+
+**Description**: Detects ARUCO markers in real-time.
+
+**How to Run**:
+
+```bash
+python "aruco.py"
+```
+
+**Dependencies**: opencv-contrib-python
+
+### 8. Camera Calibration
+
+**Description**: Calibrates camera using chessboard patterns to compute intrinsic and extrinsic parameters.
+
+**How to Run**:
+
+```bash
+python "calibration.py"
+```
+
+**Dependencies**: opencv-python
+
+### 9. Server Communication
+
+**Description**: Implements server-client communication using sockets for transmitting image data.
+
+**How to Run**:
+
+```bash
+python "Server.py"
+```
+
+**Dependencies**: socket
 
 ---
 
@@ -107,26 +125,26 @@ git clone https://github.com/JAY20921/Computer-Vision.git
 cd Computer-Vision
 ```
 
-2. **Install dependencies**:
+2. **Create a virtual environment**:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. **Install dependencies**:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-> If `requirements.txt` is not available, install manually:
+4. **Run any project script**:
 
 ```bash
-pip install opencv-python opencv-contrib-python numpy pyautogui dlib flask
+python <script_name.py>
 ```
 
-3. **Run a project**:
-
-```bash
-python "<script_name>.py"
-```
-
-Replace `<script_name>` with the Python file of the project you want to run.
+Replace `<script_name.py>` with the script you want to run.
 
 ---
-
 
