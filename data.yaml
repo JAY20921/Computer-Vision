@@ -1,0 +1,8 @@
+
+
+train: ../train/images
+val: ../val/images
+
+nc: 34
+names: ['fresh apple', 'fresh banana', 'rotten apple', 'rotten banana', 'baidynath chyawanprash', 'bajaj almond drop', 'bournvita powder', 'dabur chyawanprash', 'dettol hand sanitizer', 'dot and key facewash', 'dove soap', 'everyuth facewash', 'exo safai scrub', 'fogg spray', 'garnier facewash', 'godrej hand wash powder', 'haldiram bhujia', 'haldiram moongdal', 'haldiram punjabi tadka', 'head and shoulders shampoo', 'joy body lotion', 'kamasutra spray', "Kellogg's chocos", 'kurkure packet', 'lakme sunscreen', 'lays chips packet', 'nivea body lotion', 'odonil room freshner spray', 'parachute jasmine oil', 'patanjali aloevera gel', 'saffola oats', 'sensodyne toothpaste', 'vaseline petroleum jelly', 'vim bar']
+
